@@ -287,8 +287,8 @@ body {
 .reveal .slide-number {
   position: fixed;
   display: block;
-  right: 8px;
-  bottom: 8px;
+  right: 52px;
+  bottom: 48px;
   z-index: 31;
   font-family: Helvetica, sans-serif;
   font-size: 30px;

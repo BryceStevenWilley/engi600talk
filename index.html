@@ -7,7 +7,7 @@
         <title>Optimization in Motion Planning</title>
 
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/moon.css">
+        <link rel="stylesheet" href="css/theme/material-blue.css">
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,53 +24,52 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section data-markdown>
-                     <textarea data-template>
-                         ## Finding Optimal Robot Motion
-                         ### Bryce Willey
-                     </textarea>
+                <!-- Setup for the title of each slide. -->
+                <header style="position:absolute;top:5%;left:5%;z-index:500"><h2 style="font-size:5vh;"></h2></header>
+                <section>
+                    <h2>Finding Optimal Robot Motion</h2>
+                    <br/>
+                    <h4>Bryce Willey</h4>
+                    <h5>Rice University</h5>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## Intro
-                    </textarea>
+                <section data-state="header1">
+                    <style>.header1 header h2:after {content: "Motivation"; }</style>
+                    <!-- TODO: none of the pics match what to say on this slide.-->
+                    <div style="width:50%;float:left;">
+                        <img style="width:80%;height:auto;float:left;" src="assets/fetch.png" alt="The Fetch Robot is part of family of popular warehouse robots."></img>
+                    </div>
+                    <div style="width:50%;float:left;">
+                        <img style="width:90%;float:left;" src="assets/chao-thomaz-2016-robot.png" alt="A human collaborating with a Simon robot to build a lego house."></img>
+                    </div>
+                    <div style="float:left">
+                    <p>Robots can</p>
+                    <ul>
+                        <!-- TODO: images of Dee Faught with his arm, chao-thomaz, and nuclear bot-->
+                        <li>assist people who might not mobile</li>
+                        <li>collaborate with people</li>
+                        <li>do tasks that are unsafe</li>
+                    </ul>
+                    </div>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## Motivation   
-                        * TODO: Add a picture of Fetch and the UR5s
-                        * A picture of the robots that interact with people: Andrea's Thomaz's
-                    </textarea>
-                </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## The Problem   
+                <section data-state="header3">
+                    <style>.header3 header h2:after {content: "The Problem"; }</style>   
                         * Feasible motion Planning
                         * Optimal motion Planning
-                    </textarea>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## Sampling Planners   
+                <section data-state="header4">
+                    <style>.header4 header h2:after {content: "Sampling Planners"; }</style>   
                         * RRT and PRM
-                    </textarea>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## Optimizing Planners   
+                <section data-state="header5">
+                    <style>.header5 header h2:after {content: "Optimizing Planners"; }</style>   
                         * CHOMP and TrajOpt 
-                    </textarea>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## Struggling 
+                <section data-state="header6">
+                    <style>.header6 header h2:after {content: "Struggling"; }</style>
                         * Show local minima examples in circle world
-                    </textarea>
                 </section>
-                <section data-markdown>
-                    <textarea data-template>
-                        ## A Proposal 
-                    </textarea>
+                <section data-state="header7">
+                    <style>.header7 header h2:after {content: "A Proposal"; }</style>
                 </section>
 
             </div>
