@@ -47,6 +47,9 @@ body {
   background-color: #fff;
   color: #000; }
 
+.reveal h3, .reveal h4, .reveal p {
+  text-align: left; }
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
@@ -287,14 +290,15 @@ body {
 .reveal .slide-number {
   position: fixed;
   display: block;
-  right: 52px;
-  bottom: 48px;
+  right: 10px;
+  bottom: 15px;
   z-index: 31;
   font-family: Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 1;
   color: #fff;
-  padding: 5px; }
+  padding: 5px;
+  float: center; }
 
 .reveal .slide-number-delimiter {
   margin: 0 3px; }

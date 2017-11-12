@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no minimal-ui">
 
         <title>Optimization in Motion Planning</title>
 
@@ -23,36 +23,55 @@
     </head>
     <body>
         <div class="reveal">
+            <header style="position:absolute;top:5%;left:5%;z-index:500"><h2 style="font-size:5vh;"></h2></header>
             <div class="slides">
                 <!-- Setup for the title of each slide. -->
-                <header style="position:absolute;top:5%;left:5%;z-index:500"><h2 style="font-size:5vh;"></h2></header>
                 <section>
                     <h2>Finding Optimal Robot Motion</h2>
                     <br/>
-                    <h4>Bryce Willey</h4>
-                    <h5>Rice University</h5>
+                    <h5>Bryce Willey</h4>
+                    <img style="max-height: 130px; background-color:rgba(0, 0, 0, 0.0); border:none; box-shadow:none;"src="assets/RiceLogo.png" alt="The Rice University logo"></img>
                 </section>
                 <section data-state="header1">
                     <style>.header1 header h2:after {content: "Motivation"; }</style>
-                    <!-- TODO: none of the pics match what to say on this slide.-->
                     <div style="width:50%;float:left;">
-                        <img style="width:80%;height:auto;float:left;" src="assets/fetch.png" alt="The Fetch Robot is part of family of popular warehouse robots."></img>
+                        <img style="max-height:200px;width:auto;float:left;" src="assets/dee-faught-arm.jpg" alt="The Fetch Robot is part of family of popular warehouse robots."></img>
+                        <img style="max-height:200px;float:left;" src="assets/chao-thomaz-2016-robot.png" alt="A human collaborating with a Simon robot to build a lego house."></img>
                     </div>
-                    <div style="width:50%;float:left;">
-                        <img style="width:90%;float:left;" src="assets/chao-thomaz-2016-robot.png" alt="A human collaborating with a Simon robot to build a lego house."></img>
-                    </div>
-                    <div style="float:left">
+                    <div style="float:left; width:50%">
                     <p>Robots can</p>
                     <ul>
-                        <!-- TODO: images of Dee Faught with his arm, chao-thomaz, and nuclear bot-->
-                        <li>assist people who might not mobile</li>
-                        <li>collaborate with people</li>
-                        <li>do tasks that are unsafe</li>
+                        <li>assist people who might not be mobile</li><br/>
+                        <li>collaborate with people</li><br/>
+                        <li>do unsafe tasks</li>
                     </ul>
                     </div>
                 </section>
+                <section data-state="header2">
+                    <style>.header2 header h2:after {content: "Representing Robot Motion"; }</style>
+                    <section
+                        data-state="header2"
+                        data-background-image="assets/arm-0-0.png"
+                        data-background-size="70%">
+                    </section>
+                    <section
+                        data-state="header2"
+                        data-background-image="assets/arm-1.png"
+                        data-background-size="70%">
+                    </section>
+                    <section
+                        data-state="header2"
+                        data-background-image="assets/arm-2.png"
+                        data-background-size="70%">
+                    </section>
+                    <section
+                        data-state="header2"
+                        data-background-image="assets/arm-cspace.png"
+                        data-background-size="70%">
+                    </section>
+                </section>
                 <section data-state="header3">
-                    <style>.header3 header h2:after {content: "The Problem"; }</style>   
+                    <style>.header3 header h2:after {content: "The Problem"; }</style>
                         * Feasible motion Planning
                         * Optimal motion Planning
                 </section>
@@ -61,7 +80,7 @@
                         * RRT and PRM
                 </section>
                 <section data-state="header5">
-                    <style>.header5 header h2:after {content: "Optimizing Planners"; }</style>   
+                    <style>.header5 header h2:after {content: "Optimizing Planners"; }</style> 
                         * CHOMP and TrajOpt 
                 </section>
                 <section data-state="header6">
@@ -92,6 +111,7 @@
                 ],
                 math : { config: 'TeK-AMS_HTML-full' },
                 transition: 'none',
+                transitionSpeed: 'fast',
                 controls: true,
                 progress: true,
                 slideNumber: true,
