@@ -72,6 +72,7 @@
                 </section>
                 <section data-state="header3">
                     <style>.header3 header h2:after {content: "The Problem"; }</style>
+                        Testing: $a = a_0$
                         * Feasible motion Planning
                         * Optimal motion Planning
                 </section>
@@ -109,7 +110,10 @@
                     { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                     { src: 'plugin/math/math.js', async: true}
                 ],
-                math : { config: 'TeK-AMS_HTML-full' },
+                math: {
+		            mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	            },
                 transition: 'none',
                 transitionSpeed: 'fast',
                 controls: true,
