@@ -24,6 +24,7 @@
     <body>
         <div class="reveal">
             <header style="position:absolute;top:5%;left:5%;z-index:500"><h2 style="font-size:5vh;"></h2></header>
+            <footer style="position:absolute;bottom:5%;left:5%;z-index:500;"><h2 style="font-size:1vh"></h2></footer>
             <div class="slides">
                 <!-- Setup for the title of each slide. -->
                 <section>
@@ -34,16 +35,22 @@
                 </section>
                 <section data-state="header1">
                     <style>.header1 header h2:after {content: "Motivation"; }</style>
+                    <p>Automated robots can</p>
                     <div style="width:50%;float:left;">
-                        <img style="max-height:200px;width:auto;float:left;" src="assets/dee-faught-arm.jpg" alt="The Fetch Robot is part of family of popular warehouse robots."></img>
-                        <img style="max-height:200px;float:left;" src="assets/chao-thomaz-2016-robot.png" alt="A human collaborating with a Simon robot to build a lego house."></img>
+                        <img class="fragment" data-fragment-index="1"
+                             style="max-height:200px;width:auto;float:left;" 
+                             src="assets/dee-faught-arm.jpg" 
+                             alt="Dee Faught was built a robotic arm from Rice Students"></img>
+                        <img class="fragment" data-fragment-index="2"
+                             style="max-height:200px;float:left;" 
+                             src="assets/chao-thomaz-2016-robot.png" 
+                             alt="A human collaborating with a Simon robot to build a lego house."></img>
                     </div>
                     <div style="float:left; width:50%">
-                    <p>Robots can</p>
-                    <ul>
-                        <li>assist people who might not be mobile</li><br/>
-                        <li>collaborate with people</li><br/>
-                        <li>do unsafe tasks</li>
+                    <ul><br/>
+                        <li class="fragment" data-fragment-index="1">assist people who might not be mobile</li><br/><br/><br/>
+                        <li class="fragment" data-fragment-index="2">collaborate with people</li><br/>
+                        <li class="fragment" data-fragment-index="3">do unsafe tasks</li>
                     </ul>
                     </div>
                 </section>
@@ -72,20 +79,114 @@
                 </section>
                 <section data-state="header3">
                     <style>.header3 header h2:after {content: "The Problem"; }</style>
-                        Testing: $a = a_0$
-                        * Feasible motion Planning
-                        * Optimal motion Planning
+                    <div style="float: left; width: 45%; border-right: 2px solid white; padding:1vh;">
+                        <h4 class="fragment">Feasible Motion Planning</h4>
+                        <p class="fragment">Find a connected path from start to goal in the configuration space</p>
+                        <p class="fragment">that doesn't collide with any obstacles</p>
+                    </div>
+                    <div style="float: left; width: 45%; border-left: 2px solid white; padding: 1vh;">
+                    <h4 class="fragment">Optimal Motion Planning</h4>
+                    <p class="fragment">Assign a cost to every path: just like money, we want the cost to be low</p>
+                    <p class="fragment">Find a feasible path that minimized the cost</p>
+                    </div>
                 </section>
                 <section data-state="header4">
-                    <style>.header4 header h2:after {content: "Sampling Planners"; }</style>   
-                        * RRT and PRM
+                    <!-- Note for future: try data-background-size:"contain", 
+                         and just adjust the image size to give top and bottom clearance. -->
+                    <style>.header4 header h2:after {content: "Sampling Planners"; }</style>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/start-1.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/rrt-2-sample.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/rrt-3-extend.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/rrt-4-grow.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/rrt-5-collision.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/rrt-6-full-tree.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/rrt-7-final-path.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section data-state="header4">
+                        <h4>Pros</h4>
+                        <p>If a solution exists, it will find it (but it can't conclusively say "there is no solution.")</p>
+                        <p>Conceptually simple, generalizable</p>
+                        <h4>Cons</h4>
+                        <p>Must post-process the paths</p>
+                        <p>Optimial Versions exist, but they converge very slowly</p>
+                    </section>
                 </section>
                 <section data-state="header5">
-                    <style>.header5 header h2:after {content: "Optimizing Planners"; }</style> 
-                        * CHOMP and TrajOpt 
+                    <style>.header5 header h2:after {content: "Optimizing Planners"; }</style>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/start-1.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/opt-2-init.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/opt-3-gradients.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/opt-4-next-iter.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/opt-5.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/opt-6.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section
+                        data-state="header4"
+                        data-background-image="assets/opt-7.svg"
+                        data-background-size="auto 80%">
+                    </section>
+                    <section data-state="header4">
+                        <h4>Pros</h4>
+                        <p>Fast! (5-10x by our experiments)</p>
+                        <p>Quality paths</p>
+                        <h4>Cons</h4>
+                        <p>Only locally optimal paths</p>
+                        <p>Robot specific</p>
+                        <p>No guarentees for finding a solution</p>
+                    </section>
                 </section>
                 <section data-state="header6">
-                    <style>.header6 header h2:after {content: "Struggling"; }</style>
+                    <style>.header6 header h2:after {content: "Proper Comparison"; }</style>
                         * Show local minima examples in circle world
                 </section>
                 <section data-state="header7">
