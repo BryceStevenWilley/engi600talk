@@ -110,6 +110,10 @@ body {
 	list-style-type: disc;
 }
 
+.reveal li {
+	padding: 5px;
+}
+
 .reveal ul ul {
 	list-style-type: square;
 }
@@ -277,6 +281,7 @@ body {
 	.reveal section img.plain {
 		border: 0;
 		box-shadow: none;
+		background: rgba(0.0, 0.0, 0.0, 0.0);
 	}
 
 	.reveal a img {

@@ -23,7 +23,7 @@
     </head>
     <body>
         <div class="reveal">
-            <header style="position:absolute;top:5%;left:5%;z-index:500"><h2 style="font-size:5vh;"></h2></header>
+            <header style="position:absolute;top:3.5%;left:5%;z-index:500"><h2 style="font-size:6vh; border-bottom:solid white 1px;"></h2></header>
             <footer style="position:absolute;bottom:5%;left:5%;z-index:500;"><h2 style="font-size:1vh"></h2></footer>
             <div class="slides">
                 <!-- Setup for the title of each slide. -->
@@ -31,12 +31,12 @@
                     <h2>Finding Optimal Robot Motion</h2>
                     <br/>
                     <h5>Bryce Willey</h4>
-                    <img style="max-height: 130px; background-color:rgba(0, 0, 0, 0.0); border:none; box-shadow:none;"
+                    <img class="plain" style="max-height: 130px;"
                          src="assets/RiceLogo-small.png" alt="The Rice University logo"></img>
                 </section>
                 <section data-state="header1">
                     <style>.header1 header h2:after {content: "Motivation"; }</style>
-                    <p>Automated robots can</p>
+                    <p>Automated robots can...</p>
                     <div style="width:50%;float:left;">
                         <img class="fragment" data-fragment-index="1"
                              style="max-height:200px;width:auto;float:left;" 
@@ -48,8 +48,8 @@
                              alt="A human collaborating with a Simon robot to build a lego house."></img>
                     </div>
                     <div style="float:left; width:50%">
-                    <ul><br/>
-                        <li class="fragment" data-fragment-index="1">assist people who might not be mobile</li><br/><br/><br/>
+                    <ul>
+                        <li class="fragment" data-fragment-index="1">assist people who might not be mobile</li><br/><br/>
                         <li class="fragment" data-fragment-index="2">collaborate with people</li><br/>
                         <li class="fragment" data-fragment-index="3">do unsafe tasks</li>
                     </ul>
@@ -81,14 +81,20 @@
                 <section data-state="header3">
                     <style>.header3 header h2:after {content: "The Problem"; }</style>
                     <div style="float: left; width: 45%; border-right: 2px solid white; padding:1vh;">
-                        <h4 class="fragment">Feasible Motion Planning</h4>
-                        <p class="fragment">Find a connected path from start to goal in the configuration space</p>
-                        <p class="fragment">that doesn't collide with any obstacles</p>
+                        <h4 class="fragment" data-fragment-index="1">Feasible Motion Planning</h4>
+                        <img class="plain fragment" data-fragment-index="1" style="max-height:150px; margin:5px;" src="assets/feasible-path.svg"></img>
+                        <ul>
+                            <li class="fragment" data-fragment-index="2">Finds a connected path from start to goal in the configuration space</li>
+                            <li class="fragment" data-fragment-index="2">Doesn't collide with any obstacles</li>
+                        </ul>
                     </div>
-                    <div style="float: left; width: 45%; border-left: 2px solid white; padding: 1vh;">
-                    <h4 class="fragment">Optimal Motion Planning</h4>
-                    <p class="fragment">Assign a cost to every path: just like money, we want the cost to be low</p>
-                    <p class="fragment">Find a feasible path that minimized the cost</p>
+                    <div style="float: left; width: 45%; padding-left: 2.5vh; padding-top: 1vh;">
+                        <h4 class="fragment" data-fragment-index="3">Optimal Motion Planning</h4>
+                        <img class="plain fragment" data-fragment-index="3" style="max-height:150px;" src="assets/optimal-path.svg"></img>
+                        <ul>
+                            <li class="fragment" data-fragment-index="4">Assign a cost to every path</li>
+                            <li class="fragment" data-fragment-index="4">Find a feasible path that minimized the cost</li>
+                        </ul>
                     </div>
                 </section>
                 <section data-state="header4">
@@ -131,12 +137,23 @@
                         data-background-size="contain">
                     </section>
                     <section data-state="header4">
+                        <div style="float: left; width:45%">
                         <h4>Pros</h4>
-                        <p>If a solution exists, it will find it (but it can't conclusively say "there is no solution.")</p>
-                        <p>Conceptually simple, generalizable</p>
+                        <ul>
+                            <li>If a solution exists, it will be found</li>
+                            <li>Conceptually simple</li>
+                            <li>Generalizable</li>
+                            <li>Optimal planners exist</li>
+                        </ul>
+                        </div>
+                        <div style="float: right; width: 45%">
                         <h4>Cons</h4>
-                        <p>Must post-process the paths</p>
-                        <p>Optimial Versions exist, but they converge very slowly</p>
+                        <ul>
+                            <li>Can't conclusively say "there is no solution"</li>
+                            <li>Must smooth the path after finding it</li>
+                            <li>Optimal planners converge very slowly</li>
+                        </ul>
+                        </div>
                     </section>
                 </section>
                 <section data-state="header5">
@@ -177,20 +194,29 @@
                         data-background-size="contain">
                     </section>
                     <section data-state="header4">
-                        <h4>Pros</h4>
-                        <p>Fast! (5-10x by our experiments)</p>
-                        <p>Quality paths</p>
-                        <h4>Cons</h4>
-                        <p>Only locally optimal paths</p>
-                        <p>Robot specific</p>
-                        <p>No guarentees for finding a solution</p>
+                        <div style="width: 45%; float:left;">
+                            <h4>Pros</h4>
+                            <ul>
+                                <li>Fast! (5-10x by our experiments)</li>
+                                <li>Quality paths</li>
+                            </ul>
+                        </div>
+                        <div style="width: 45%; float: left;">
+                            <h4>Cons</h4>
+                            <ul>
+                                <li>Paths aren't globally optimal</li>
+                                <li>Robot specific</li>
+                                <li>No guarantee of finding a feasible path</li>
+                            </ul>
+                        </div>
                     </section>
                 </section>
                 <section data-state="header6">
-                    <style>.header6 header h2:after {content: "A Specific Comparison"; }</style>
-                    <style>.header6-1 header h2:after {content: "A Specific Comparison: Optimizing Planner"; }</style>
-                    <style>.header6-2 header h2:after {content: "A Specific Comparison: Sampling Planner"; }</style>
+                    <style>.header6 header h2:after {content: "Results: A Specific Comparison"; }</style>
+                    <style>.header6-1 header h2:after {content: "TrajOpt: An Optimizing Planner"; }</style>
+                    <style>.header6-2 header h2:after {content: "RRT-Connect: A Sampling Planner"; }</style>
                     <style>.header6-3 header h2:after {content: "A Specific Comparison: Data"; }</style>
+                    <style>.header6-4 header h2:after {content: "Results: When Optimizers fail"; }</style>
                     <section data-state="header6">
                         <div style="float: top; height: 100%;">
                             <img style="max-height:350px; width: auto; background-color:rgba(0, 0, 0, 0.0); border:none; box-shadow:none;" src="assets/lab-b.png"></img>
@@ -215,7 +241,7 @@
                         <img style="max-height:325px; width: auto;" src="assets/distance.png">
                     </div>
                     </section>
-                    <section data-state="header6"
+                    <section data-state="header6-4"
                         data-background-video="assets/chomp-weird.mp4"
                         data-background-video-loop
                         data-background-video-muted
@@ -227,13 +253,26 @@
                 </section>
                 <section data-state="header7">
                     <style>.header7 header h2:after {content: "Comparing Apples and Oranges"; }</style>
-                    <p>What constitutes a 'good' benchmark?</p>
                     <p>Collision checking takes the majority of the time in motion planning</p>
                     <p>Optimizing Planners do special 'tricks' to speed up collision checking</p>
-                    <p>Are their speed ups due to these tricks?</p>
+                    <p>Are optimizing planners faster because of their 'tricks'?</p>
+                    <p>Or are they inheritly faster?</p>
                 </section>
                 <section data-state="header8">
-                    <style>.header8 header h2:after {content: "A Proposal"; }</style>
+                    <style>.header8 header h2:after {content: "Future Work"; }</style>
+                    <p class="fragment">Get more fine-grained details from experiments</p><br/>
+                    <p class="fragment">Test on a wider variety of planning problems</p><br/>
+                    <p class="fragment">Use sampling and optimization together: quality motion and faster convergence</p>
+                </section>
+                <section data-state="header9">
+                    <style>.header9 header h2:after {content: "Conclusion"; }</style>
+                    <div>
+                        <img class="plain" style="max-height:200px; padding-right: 10vh;" src="assets/rrt-6-full-tree.svg"></img>
+                        <img class="plain" style="max-height:200px;" src="assets/opt-4-next-iter.svg"></img>
+                    </div>
+                    <p>Sampling planners and optimizing planners both have pros and cons</p>
+                    <p>Optimizing Planners are still not reliable enought to be use safely</p>
+                    <p>Current work to improve both types of planners</p>
                 </section>
 
             </div>

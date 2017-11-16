@@ -23,7 +23,7 @@ body {
 
 .reveal {
   font-family: "Open Sans", sans-serif;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: normal;
   color: #333; }
 
@@ -109,6 +109,9 @@ body {
 
 .reveal ul {
   list-style-type: disc; }
+
+.reveal li {
+  padding: 5px; }
 
 .reveal ul ul {
   list-style-type: square; }
@@ -243,7 +246,8 @@ body {
 
 .reveal section img.plain {
   border: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  background: transparent; }
 
 .reveal a img {
   -webkit-transition: all .15s linear;
