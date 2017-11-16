@@ -29,8 +29,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1209231"
-     inkscape:cx="346.77417"
-     inkscape:cy="198.43729"
+     inkscape:cx="354.49145"
+     inkscape:cy="155.14157"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,8 +39,8 @@
      inkscape:snap-to-guides="false"
      inkscape:window-width="1392"
      inkscape:window-height="884"
-     inkscape:window-x="285"
-     inkscape:window-y="122"
+     inkscape:window-x="227"
+     inkscape:window-y="48"
      inkscape:window-maximized="0"
      inkscape:snap-global="false"
      fit-margin-top="0"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,34 +64,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-1.9869762,-77.965361)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.41535336px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 53.778446,153.15166 H 15.498278 v -37.08614"
-       id="path4563"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
-    <circle
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.82599998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4565"
-       cx="15.434904"
-       cy="152.88676"
-       r="0.3249453" />
-    <rect
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.82600003;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4567"
-       width="41.592999"
-       height="23.883478"
-       x="156.29869"
-       y="108.69419"
-       ry="2.3305178" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.33464432;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4569"
-       width="139.43164"
-       height="99.789909"
-       x="65.948837"
-       y="78.132683"
-       ry="2.4552202" />
     <ellipse
        ry="1.3278288"
        rx="1.327829"
@@ -124,36 +96,6 @@
            id="tspan4605"
            sodipodi:role="line" /></text>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.65268898px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21631724"
-       x="31.368282"
-       y="164.31216"
-       id="text4615"
-       transform="scale(1.0183032,0.98202575)"><tspan
-         sodipodi:role="line"
-         id="tspan4613"
-         x="31.368282"
-         y="164.31216"
-         style="stroke-width:0.21631724">θ1</tspan></text>
-    <text
-       transform="scale(1.0183032,0.98202578)"
-       id="text4631"
-       y="140.15698"
-       x="1.3724443"
-       style="font-style:normal;font-weight:normal;font-size:8.65268898px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21631724"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.21631724"
-         y="140.15698"
-         x="1.3724443"
-         id="tspan4629"
-         sodipodi:role="line">θ2</tspan></text>
-    <circle
-       r="0.3249453"
-       cy="135.66467"
-       cx="29.407553"
-       id="circle4685"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.82599998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
        id="g4723"
        transform="rotate(-15,94.238842,163.53982)">
@@ -206,14 +148,72 @@
          rx="1.327829"
          ry="1.3278288" />
     </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.41535336px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 53.778446,153.15166 H 15.498278 v -37.08614"
+       id="path4563"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.82599998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4565"
+       cx="15.434904"
+       cy="152.88676"
+       r="0.3249453" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.82600003;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4567"
+       width="41.592999"
+       height="23.883478"
+       x="156.29869"
+       y="108.69419"
+       ry="2.3305178" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.33464432;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4569"
+       width="139.43164"
+       height="99.789909"
+       x="65.948837"
+       y="78.132683"
+       ry="2.4552202" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.65268898px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21631724;"
+       x="31.368282"
+       y="164.31216"
+       id="text4615"
+       transform="scale(1.0183032,0.98202577)"><tspan
+         sodipodi:role="line"
+         id="tspan4613"
+         x="31.368282"
+         y="164.31216"
+         style="stroke-width:0.21631724;fill:#ffffff;fill-opacity:1;">θ1</tspan></text>
+    <text
+       transform="scale(1.0183032,0.98202578)"
+       id="text4631"
+       y="140.15698"
+       x="1.3724443"
+       style="font-style:normal;font-weight:normal;font-size:8.65268898px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.21631724;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.21631724;fill:#ffffff;fill-opacity:1;"
+         y="140.15698"
+         x="1.3724443"
+         id="tspan4629"
+         sodipodi:role="line">θ2</tspan></text>
+    <circle
+       r="0.3249453"
+       cy="135.66467"
+       cx="29.407553"
+       id="circle4685"
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.82599998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <circle
        r="0.3249453"
        cy="143.57362"
        cx="37.294415"
        id="circle4685-3"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.82599998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.82599998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 29.505074,136.25636 8.261418,7.5533"
        id="path4821"
        inkscape:connector-curvature="0" />
