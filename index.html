@@ -98,37 +98,37 @@
                     <section
                         data-state="header4"
                         data-background-image="assets/start-1.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/rrt-2-sample.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/rrt-3-extend.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/rrt-4-grow.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/rrt-5-collision.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/rrt-6-full-tree.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/rrt-7-final-path.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section data-state="header4">
                         <h4>Pros</h4>
@@ -144,37 +144,37 @@
                     <section
                         data-state="header4"
                         data-background-image="assets/start-1.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/opt-2-init.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/opt-3-gradients.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/opt-4-next-iter.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/opt-5.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/opt-6.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section
                         data-state="header4"
                         data-background-image="assets/opt-7.svg"
-                        data-background-size="auto 80%">
+                        data-background-size="contain">
                     </section>
                     <section data-state="header4">
                         <h4>Pros</h4>
@@ -187,25 +187,50 @@
                     </section>
                 </section>
                 <section data-state="header6">
-                    <style>.header6 header h2:after {content: "Proper Comparison"; }</style>
-                    <div style="float: left; width: 50%">
-                        <img src="assets/lab-b.png"></img>
-                        <img src="assets/lab-e.png"></img>
+                    <style>.header6 header h2:after {content: "A Specific Comparison"; }</style>
+                    <style>.header6-1 header h2:after {content: "A Specific Comparison: Optimizing Planner"; }</style>
+                    <style>.header6-2 header h2:after {content: "A Specific Comparison: Sampling Planner"; }</style>
+                    <style>.header6-3 header h2:after {content: "A Specific Comparison: Data"; }</style>
+                    <section data-state="header6">
+                        <div style="float: top; height: 100%;">
+                            <img style="max-height:350px; width: auto; background-color:rgba(0, 0, 0, 0.0); border:none; box-shadow:none;" src="assets/lab-b.png"></img>
+                            <img style="max-height:350px; width: auto; background-color:rgba(0, 0, 0, 0.0); border:none; box-shadow:none;" src="assets/lab-e.png"></img>
+                        </div>
+                    </section>
+                    <section data-state="header6-1"
+                        data-background-video="assets/Traj Opt Good.mp4"
+                        data-background-video-loop
+                        data-background-video-muted
+                        data-background-size="contain">
+                    </section>
+                    <section data-state="header6-2"
+                        data-background-video="assets/RRT-weird.mp4"
+                        data-background-video-loop
+                        data-background-video-mute
+                        data-background-size="contain">
+                    </section>
+                    <section data-state="header6-3">
+                    <div style="float: bottom; height: 100%">
+                        <img style="max-height:325px; width: auto;" src="assets/planning-time.png"></img>
+                        <img style="max-height:325px; width: auto;" src="assets/distance.png">
                     </div>
-                    <div style="float: left; width: 50%">
-                       
-                        <!-- Put the new 20 run results here (no RRT*) -->
-                    </div>
-                </section>
-                <section data-state="header7">
-                    <style>.header7 header h2:after {content: "Comparing Apples and Oranges"; }</style>
-                    <p>No comparisons in the literature yet</p>
-                    <p>Collision checking takes the majority of the time in motion planning</p>
-                    <p>Optimizing Planners do special 'tricks' to speed up collision checking</p>
-                    <p>Are their speed ups due to these tricks?</p>
+                    </section>
+                    <section data-state="header6"
+                        data-background-video="assets/chomp-weird.mp4"
+                        data-background-video-loop
+                        data-background-video-muted
+                        data-background-size="contain">
+                    </section>
                     <aside class="notes">
                       Surprisingly, there haven't been any good comparisons in the literature.
                     </aside>
+                </section>
+                <section data-state="header7">
+                    <style>.header7 header h2:after {content: "Comparing Apples and Oranges"; }</style>
+                    <p>What constitutes a 'good' benchmark?</p>
+                    <p>Collision checking takes the majority of the time in motion planning</p>
+                    <p>Optimizing Planners do special 'tricks' to speed up collision checking</p>
+                    <p>Are their speed ups due to these tricks?</p>
                 </section>
                 <section data-state="header8">
                     <style>.header8 header h2:after {content: "A Proposal"; }</style>
@@ -239,6 +264,12 @@
                 progress: true,
                 slideNumber: true,
                 history: true
+            });
+            Reveal.configure({
+                keyboard: {
+                    39: 'next',
+                    37: 'prev'
+                }
             });
         </script>
     </body>

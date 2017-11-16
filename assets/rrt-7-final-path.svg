@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="194.28183mm"
-   height="157.93044mm"
-   viewBox="0 0 194.28183 157.93044"
+   height="177.93044mm"
+   viewBox="0 0 194.28183 177.93044"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 (unknown)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="rrt-7-final-path.svg">
   <defs
      id="defs2" />
@@ -26,19 +26,19 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="206.79086"
-     inkscape:cy="294.51374"
+     inkscape:cx="171.43552"
+     inkscape:cy="294.51376"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1628"
+     inkscape:window-height="1005"
+     inkscape:window-x="52"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      objecttolerance="11"
-     fit-margin-top="40"
+     fit-margin-top="60"
      fit-margin-left="90"
      fit-margin-right="60"
      fit-margin-bottom="40" />
@@ -58,7 +58,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-0.79917596,-66.226184)">
+     transform="translate(-0.79917596,-46.226184)">
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 134.9375,132.58035 -15.875,-17.3869 -18.98095,-8.79093 -9.095367,20.29788 21.272747,4.74603 -12.473216,33.2619 -8.693454,7.55952 7.181548,11.71727 L 127,170 Z"
@@ -93,7 +93,8 @@
        r="2.9293153"
        id="path925"
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.32600001;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       d="" />
     <circle
        cx="56.918716"
        cy="150.09879"

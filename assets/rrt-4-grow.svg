@@ -10,11 +10,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="194.28183mm"
-   height="157.93044mm"
-   viewBox="0 0 194.28182 157.93044"
+   height="177.93044mm"
+   viewBox="0 0 194.28182 177.93044"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 (unknown)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="rrt-4-grow.svg">
   <defs
      id="defs2" />
@@ -26,19 +26,19 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="108.69097"
-     inkscape:cy="256.4882"
+     inkscape:cx="-155.59474"
+     inkscape:cy="256.48821"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1628"
+     inkscape:window-height="1005"
+     inkscape:window-x="52"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      objecttolerance="11"
-     fit-margin-top="40"
+     fit-margin-top="60"
      fit-margin-left="90"
      fit-margin-right="60"
      fit-margin-bottom="40" />
@@ -58,7 +58,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-0.79917596,-66.226184)">
+     transform="translate(-0.79917596,-46.226184)">
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 134.9375,132.58035 -15.875,-17.3869 -18.98095,-8.79093 -9.095367,20.29788 21.272747,4.74603 -12.473216,33.2619 -8.693454,7.55952 7.181548,11.71727 L 127,170 Z"
